@@ -1,6 +1,8 @@
-import {version, exchanges, bybit} from 'ccxt';
+const ccxt = require('ccxt');
 
-const exchange = new bybit();
-const ticker = await exchange.fetchOrderBook('ROUTE/USDT');
-console.log(ticker);
-// console.log(version, Object.keys(exchanges));
+const exchange = new ccxt.bybit();
+exchange.fetchOrderBook('ROUTE/USDT').then(function(ticker) {
+    console.log(ticker);
+}).catch(function(error) {
+    console.error(error);
+});
