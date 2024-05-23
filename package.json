@@ -1,5 +1,6 @@
 {
-  "name": "testing",
+  "name": "proxy",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bybit-api": "^3.10.3",
-    "ccxt": "^4.3.29"
+    "axios": "^1.7.2",
+    "ccxt": "^4.3.20",
+    "cors": "^2.8.5",
+    "date-and-time": "^3.2.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "firebase": "^10.12.0",
+    "node-fetch": "^2.7.0",
+    "nodemon": "^3.1.0",
+    "vercel": "^34.2.0"
   }
 }
